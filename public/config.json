@@ -1,0 +1,17 @@
+[
+  {
+    "SlideName":"One",
+    "SlideNumber":1,
+    "SlideImage":"/images/***"
+  },
+  {
+    "SlideName":"Two",
+    "SlideNumber":2,
+    "SlideImage":"/images/***"
+  },
+  {
+    "SlideName":"Three",
+    "SlideNumber":3,
+    "SlideImage":"/images/***"
+  }
+]

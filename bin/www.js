@@ -38,15 +38,16 @@ app.set('port', port);
  */
 const httpServer = createServer(app);
 const io = new Server(httpServer, { cors: {
-  origin: "http://localhost:5173"
+  origin: "*"
 } });
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 io.on("connection", (socket) => {
+  console.log(socket.id)
   socket.on('slideEmmiter', (val) => {
-    socket.emit('jumpToSlide',val)
+    io.emit('jumpToSlide',val)
   })
 });
 
